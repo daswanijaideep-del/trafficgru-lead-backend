@@ -104,11 +104,13 @@ const row = [
   form_data.email || '',
 
   /* E */
+  "'" + (
   (
     (form_data.country_code || '') +
     ' ' +
     (form_data.phone || '')
-  ).trim(),
+  ).trim()
+),
 
   /* F */
   form_data.message || '',
